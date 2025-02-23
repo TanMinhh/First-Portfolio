@@ -1,0 +1,368 @@
+body{
+    background-color: #1E232D;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    width: inherit;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.nav-header{
+    width: 400px;
+    font-size: 22px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    align-items: flex-end;
+    flex: 40%;
+}
+
+.logo{
+    margin-left: 100px;
+    flex: 60%;
+}
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.nav-header-item{
+    font-weight: 380;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-header a:hover{
+    color: grey;
+    transition-duration: 1s;
+}
+
+.home{
+    height: 756px;
+    padding-top: 100px;
+}
+
+#cat-model{
+    width: 100%;
+    height: 60%;
+    pointer-events: none;
+    z-index: 100;
+    transition: transform 1s ease-out;
+}
+
+.about{
+    padding-block-start: 250px;
+    height: 656px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    color: white;
+    position: relative;
+    margin-left: 50%;
+}
+
+.about h1{  
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about h2{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 200;
+}
+
+.gallery{
+    height: 756px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    color: white;
+    padding-top: 50px;
+}
+
+.gallery h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.gallery .container{ 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.gallery .container .box { 
+  flex-grow: 1; 
+  height: 400px; 
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px solid white;
+  border-radius: 20px;
+  outline: 2px solid white;
+  outline-offset: 10px;
+  overflow: hidden;
+}
+
+.gallery .container .box img{
+    width: 100%;
+    height: 100%;
+} 
+
+.contact{
+    height: 600px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    color: white;
+}
+
+.contact h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact .container{ 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.contact .container .content{ 
+    flex-grow: 1; 
+    height: 400px; 
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+.contact .container .content .contact-icon i{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.contact .container .content .contact-icon a{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.contact .container .content .contact-icon a:hover{
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+
+.contact .container .content .box1 { 
+    height: 40px; 
+    margin-bottom: 20px;
+}
+
+.contact .container .content .box2 { 
+    height: fit-content; 
+    width: fit-content;
+}
+
+.contact .container .content .box1 #name{ 
+    height: 35px; 
+    width: 25vw;
+    color: white;
+    background-color: #1E232D;
+    border-color: white;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+}
+
+.contact .container .content .box1 #name::-webkit-input-placeholder{
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+}
+
+.contact .container .content .box1 #mail{ 
+    height: 35px; 
+    width: 25vw;
+    color: white;
+    background-color: #1E232D;
+    border-color: white;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+}
+
+.contact .container .content .box1 #mail::-webkit-input-placeholder{
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+}
+
+.contact .container .content .box2 #mess{ 
+    height: 200px; 
+    width: 25vw;
+    color: white;
+    background-color: #1E232D;
+    border-color: white;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+}
+
+.contact .container .content .box2 #mess::-webkit-input-placeholder{
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+}
+
+.contact .container .content .box2 .submit{ 
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 6px;    
+}
+
+.contact .container .content .box2 .submit:before{ 
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.contact .container .content .box2 .submit:active{ 
+    color: #000
+}
+
+.contact .container .content .box2 .submit:active:after {
+    background: transparent;
+}
+
+.contact .container .content .box2 .submit:hover:before {
+    opacity: 1;
+}
+
+.contact .container .content .box2 .submit:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*Responsive*/
+@media screen and (max-width: 412px) {
+    body{
+        width: 100%;
+    }
+    header{
+        padding: 20px;
+    }
+    .logo{
+        margin-left: 20px;
+        flex: 0%;
+    }  
+    .logo-img{
+        width: 60px;
+        height: 60px;
+    }
+    .nav-header{
+        font-size: 15px;
+        flex: 50%;
+    }
+    .nav-header-item{
+        font-weight: 380;
+        padding: 10px;
+        margin-right: 5px;
+        text-decoration: none;
+        color: white;
+    }
+    .home{
+        padding-top: 130px;
+    }
+    .about{
+        margin-left: 2%;
+    }
+    .gallery{
+        height: 900px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+    .gallery .container .box { 
+        flex-grow: 1; 
+        height: 200px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+        border: 2px solid white;
+        border-radius: 20px;
+        outline: 2px solid white;
+        outline-offset: 5px;
+        overflow: hidden;
+        max-width: 40%;
+    }
+    .contact{
+        padding-top: 100px;
+        height: 680px;
+    }
+    .contact .container .content{ 
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .contact .container .content .box1 #name{ 
+        width: 85vw;
+    }
+    .contact .container .content .box1 #mail{ 
+        width: 85vw;
+    }
+    .contact .container .content .box2 #mess{ 
+        height: 160px;
+        width: 85vw;
+    }
+}

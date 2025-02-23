@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meh's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59038c306c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                
+                        window.location.hash = hash;
+                    });
+                } 
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" class="logo-img" alt="">
+        </div>
+        <nav class="nav-header">
+            <a href="#homepage" class="nav-header-item">Home</a>
+            <a href="#aboutpage" class="nav-header-item">About</a>
+            <a href="#gallerypage" class="nav-header-item">Gallery</a>
+            <a href="#contactpage" class="nav-header-item">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="homepage">
+        <model-viewer id="cat-model" interaction-prompt="none" src="glb/oiiaioooooiai_cat.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" autoplay camera-orbit="-6.476deg 81.14deg 1.562m" field-of-view="30deg">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+        </model-viewer>
+    </section>
+
+    <section class="about" id="aboutpage">
+        <h1>About me</h1>
+        <h2>My name is Minh. <br>
+            I'm an university student. <br>
+            My major is Information Technology. <br>
+            I'm good at develop website (both front-end and back-end). <br>
+            I'm interested in football, game, billiard, comics, mangas, manhwa... <br>
+            I want to be a full-stack web dev and have high-income skills.
+        </h2>
+    </section>
+
+    <section class="gallery" id="gallerypage">
+        <h1>Gallery</h1>
+        <div class="container">
+            <div class="box"><img src="images/profile1.jpg" alt=""></div>
+            <div class="box"><img src="images/profile2.jpg" alt=""></div>
+            <div class="box"><img src="images/profile3.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contactpage">
+        <h1>Contact</h1>
+        <div class="container">
+            <div class="content">
+                <div class="contact-icon">
+                    <a href="https://www.facebook.com/tan.minh.350688/about?locale=vi_VN"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tn_minh.ledg/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@mean1ee"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <h2>
+                    Ho Chi Minh City <br>
+                    +84 799 879 642 <br>
+                    22520865@gm.uit.edu.vn
+                </h2>
+            </div>
+            <div class="content">
+                <div class="box1"><input type="text" placeholder="Your name" id="name" name="name"></div>
+                <div class="box1"><input type="email" placeholder="Your email" id="mail" name="mail"></div>
+                <div class="box2"><textarea placeholder="Your message" id="mess" name="mess"></textarea></div>
+                <div class="box2"><button class="submit" type="button">Send</button></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>
